@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/visola/teste-cicd-01#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "selenium-webdriver": "^4.1.0"
   },
   "devDependencies": {
     "jest": "^27.4.3"
