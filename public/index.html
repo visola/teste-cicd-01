@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <style>
+        * {
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 2em;
+            margin: 0;
+            padding: 50px;
+        }
+
+        button {
+            background: transparent;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        input, select {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <h2>Bem vindo a calculadora!</h2>
@@ -34,6 +58,7 @@
         const operand1 = document.querySelector('[name=operand1]');
         const operand2 = document.querySelector('[name=operand2]');
         const operator = document.querySelector('[name=operator]');
+        operand1.focus();
 
         document.querySelector('form').addEventListener('submit', (e) => {
             e.preventDefault();
