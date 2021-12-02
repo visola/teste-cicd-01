@@ -10,7 +10,7 @@ jobs:
 
     steps:
 
-      - name: Test
+      - name: Install Volta
         uses: volta-cli/action@v1
         with:
           node-version: '14'
@@ -21,4 +21,5 @@ jobs:
 
       - name: Test
         run: |
+          npm install
           npm test
